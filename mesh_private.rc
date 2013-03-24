@@ -1,0 +1,35 @@
+/* THIS FILE WILL BE OVERWRITTEN BY DEV-C++ */
+/* DO NOT EDIT! */
+
+#include <windows.h> // include for version info constants
+
+
+//
+// TO CHANGE VERSION INFORMATION, EDIT PROJECT OPTIONS...
+//
+1 VERSIONINFO
+FILEVERSION 0,1,1,1
+PRODUCTVERSION 0,1,1,1
+FILETYPE VFT_APP
+{
+  BLOCK "StringFileInfo"
+	 {
+		 BLOCK "400904E4"
+		 {
+			 VALUE "CompanyName", "none"
+			 VALUE "FileVersion", ""
+			 VALUE "FileDescription", "Tyre of Car"
+			 VALUE "InternalName", ""
+			 VALUE "LegalCopyright", ""
+			 VALUE "LegalTrademarks", ""
+			 VALUE "OriginalFilename", ""
+			 VALUE "ProductName", "Tyre"
+			 VALUE "ProductVersion", "1.0"
+		 }
+	 }
+  BLOCK "VarFileInfo"
+	 {
+		 VALUE "Translation", 0x4009, 1252
+	 }
+}
+

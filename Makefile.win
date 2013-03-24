@@ -1,0 +1,57 @@
+# Project: Perspective
+# Makefile created by Dev-C++ 4.9.9.2
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main2.o car.o png.o texture.o key.o track.o mouse.o grass.o bump.o turn.o $(RES)
+LINKOBJ  = main2.o car.o png.o texture.o key.o track.o mouse.o grass.o bump.o turn.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" ../lib/libopengl32.a ../lib/libglu32.a ../lib/libglut32.a ../lib/libpng.dll.a  
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/lib/gcc/mingw32/3.4.2/include"  -I"C:/Dev-Cpp/include/c++/3.4.2/backward"  -I"C:/Dev-Cpp/include/c++/3.4.2/mingw32"  -I"C:/Dev-Cpp/include/c++/3.4.2"  -I"C:/Dev-Cpp/include" 
+BIN  = Perspective.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+RM = rm -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before Perspective.exe all-after
+
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o "Perspective.exe" $(LIBS)
+
+main2.o: main2.cpp
+	$(CPP) -c main2.cpp -o main2.o $(CXXFLAGS)
+
+car.o: car.cpp
+	$(CPP) -c car.cpp -o car.o $(CXXFLAGS)
+
+png.o: png.cpp
+	$(CPP) -c png.cpp -o png.o $(CXXFLAGS)
+
+texture.o: texture.cpp
+	$(CPP) -c texture.cpp -o texture.o $(CXXFLAGS)
+
+key.o: key.cpp
+	$(CPP) -c key.cpp -o key.o $(CXXFLAGS)
+
+track.o: track.cpp
+	$(CPP) -c track.cpp -o track.o $(CXXFLAGS)
+
+mouse.o: mouse.cpp
+	$(CPP) -c mouse.cpp -o mouse.o $(CXXFLAGS)
+
+grass.o: grass.cpp
+	$(CPP) -c grass.cpp -o grass.o $(CXXFLAGS)
+
+bump.o: bump.cpp
+	$(CPP) -c bump.cpp -o bump.o $(CXXFLAGS)
+
+turn.o: turn.cpp
+	$(CPP) -c turn.cpp -o turn.o $(CXXFLAGS)
